@@ -224,7 +224,7 @@ namespace CompleteProject
 			// Prepare the validator with the secrets we prepared in the Editor
 			// obfuscation window.
 			var validator = new CrossPlatformValidator(GooglePlayTangle.Data(),
-				AppleTangle.Data(), Application.bundleIdentifier);
+				AppleTangle.Data(), Application.identifier);
 
 			try {
 				// On Google Play, result will have a single product Id.

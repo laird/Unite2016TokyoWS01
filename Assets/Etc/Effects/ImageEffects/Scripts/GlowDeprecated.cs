@@ -99,13 +99,6 @@ public class GlowDeprecated : MonoBehaviour
 	
 	protected void Start()
 	{
-		// Disable if we don't support image effects
-		if (!SystemInfo.supportsImageEffects)
-		{
-			enabled = false;
-			return;
-		}
-		
 		// Disable the effect if no downsample shader is setup
 		if( downsampleShader == null )
 		{
