@@ -37,3 +37,10 @@ The project uses preprocessor directives for platform-specific behavior:
 - `UNITY_IOS`, `UNITY_ANDROID` - Mobile gyroscope input
 - `UNITY_EDITOR` - Editor-only behavior
 - IAP receipt validation is platform-specific (Android, iOS, OSX)
+
+## Unity Version Compatibility
+
+- **Original version**: Unity 5.3.4 (Mono runtime, .NET 2.0 API)
+- **Linux Editor**: Requires Unity 2019.x+ for official Linux Editor support
+- **CoreCLR runtime**: Requires Unity 6+ (experimental)
+- **Upgrading**: Expect deprecated API fixes for CinematicEffects/ImageEffects (replaced by Post Processing Stack in newer Unity)
